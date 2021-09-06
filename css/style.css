@@ -1,0 +1,136 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    flex-wrap: nowrap;
+}
+
+header{
+    text-align: center;
+    background: #fff;
+    width: 100%;
+}
+
+.container{
+    height: 100vh;
+    background: #24272e;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-tab{
+    display: flex;
+    border: 2px solid #fff;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 6rem;
+    margin: .5rem;
+}
+
+.txt-you, .comp-txt{
+    background: #f14;
+    position: absolute;
+    padding:.2rem .5rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.txt-you {
+    left: -24px;
+}
+
+.comp-txt{
+    right: -30px
+}
+
+.tx{
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.computer, .you{
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.rock{
+    width: 5rem;
+    height: 5rem;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: .8rem;
+    cursor: pointer;
+    transition: all .5s;
+
+}
+
+.scissors{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 3px solid #fff;
+    margin: .8rem;
+    cursor: pointer;
+    transition: all .5s;
+
+}
+
+.paper{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 3px solid #fff;
+    margin: .8rem;
+    cursor: pointer;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.result-for-txt{
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.small{
+    font-size: .8rem;
+    font-weight: 500;
+    color: #f14;
+}
+
+.win{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+}
+
+@media (max-width:568px){
+    .result-for-txt{
+        font-size: 1rem;
+    }
+
+    .rock,.scissors,.paper{
+        width: 4rem;
+        height: 4rem;
+    }
+}
